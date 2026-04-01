@@ -1,6 +1,10 @@
 pages/InventoryPage.class
+models/CreateUserRequest.class
 tests/LoginTest.class
+api/BaseApi.class
+api/UsersApi.class
 api/UsersApiTest.class
 stepdefinitions/LoginSteps.class
+config/Config.class
 pages/LoginPage.class
 tests/CucumberTestRunner.class

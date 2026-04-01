@@ -1,4 +1,8 @@
+/Users/kyrylogarmash/Sources/synechron-qa-framework/src/test/java/api/BaseApi.java
+/Users/kyrylogarmash/Sources/synechron-qa-framework/src/test/java/api/UsersApi.java
 /Users/kyrylogarmash/Sources/synechron-qa-framework/src/test/java/api/UsersApiTest.java
+/Users/kyrylogarmash/Sources/synechron-qa-framework/src/test/java/config/Config.java
+/Users/kyrylogarmash/Sources/synechron-qa-framework/src/test/java/models/CreateUserRequest.java
 /Users/kyrylogarmash/Sources/synechron-qa-framework/src/test/java/pages/InventoryPage.java
 /Users/kyrylogarmash/Sources/synechron-qa-framework/src/test/java/pages/LoginPage.java
 /Users/kyrylogarmash/Sources/synechron-qa-framework/src/test/java/stepdefinitions/LoginSteps.java

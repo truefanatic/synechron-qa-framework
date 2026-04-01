@@ -1,76 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-31T23:37:00 MDT" name="SynechronSuite" finished-at="2026-03-31T23:37:05 MDT" duration-ms="4378">
+  <suite started-at="2026-04-01T15:55:00 MDT" name="SynechronSuite" finished-at="2026-04-01T15:55:04 MDT" duration-ms="3675">
     <groups>
+      <group name="api">
+        <method signature="UsersApiTest.createUserTest()[pri:0, instance:api.UsersApiTest@1725dc0f]" name="createUserTest" class="api.UsersApiTest"/>
+        <method signature="UsersApiTest.getSingleUserTest()[pri:0, instance:api.UsersApiTest@1725dc0f]" name="getSingleUserTest" class="api.UsersApiTest"/>
+        <method signature="UsersApiTest.getUsersTest()[pri:0, instance:api.UsersApiTest@1725dc0f]" name="getUsersTest" class="api.UsersApiTest"/>
+      </group> <!-- api -->
     </groups>
-    <test started-at="2026-03-31T23:37:00 MDT" name="UITests" finished-at="2026-03-31T23:37:04 MDT" duration-ms="3490">
+    <test started-at="2026-04-01T15:55:00 MDT" name="UITests" finished-at="2026-04-01T15:55:02 MDT" duration-ms="2304">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@33afa13b]" started-at="2026-03-31T23:37:00 MDT" name="setUp" finished-at="2026-03-31T23:37:03 MDT" duration-ms="2780" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@51e5fc98]" started-at="2026-04-01T15:55:00 MDT" name="setUp" finished-at="2026-04-01T15:55:02 MDT" duration-ms="1558" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLoginTest()[pri:0, instance:tests.LoginTest@33afa13b]" started-at="2026-03-31T23:37:03 MDT" name="validLoginTest" finished-at="2026-03-31T23:37:04 MDT" duration-ms="615" status="PASS">
+        <test-method signature="validLoginTest()[pri:0, instance:tests.LoginTest@51e5fc98]" started-at="2026-04-01T15:55:02 MDT" name="validLoginTest" finished-at="2026-04-01T15:55:02 MDT" duration-ms="648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@33afa13b]" started-at="2026-03-31T23:37:04 MDT" name="tearDown" finished-at="2026-03-31T23:37:04 MDT" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@51e5fc98]" started-at="2026-04-01T15:55:02 MDT" name="tearDown" finished-at="2026-04-01T15:55:02 MDT" duration-ms="88" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginTest -->
     </test> <!-- UITests -->
-    <test started-at="2026-03-31T23:37:04 MDT" name="APITests" finished-at="2026-03-31T23:37:05 MDT" duration-ms="863">
+    <test started-at="2026-04-01T15:55:02 MDT" name="APITests" finished-at="2026-04-01T15:55:04 MDT" duration-ms="1349">
       <class name="api.UsersApiTest">
-        <test-method signature="getUsersTest()[pri:0, instance:api.UsersApiTest@3d680b5a]" started-at="2026-03-31T23:37:04 MDT" name="getUsersTest" finished-at="2026-03-31T23:37:05 MDT" duration-ms="861" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.UsersApiTest.getUsersTest(UsersApiTest.java:17)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="createUserTest()[pri:0, instance:api.UsersApiTest@1725dc0f]" started-at="2026-04-01T15:55:02 MDT" name="createUserTest" finished-at="2026-04-01T15:55:03 MDT" duration-ms="1022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserTest -->
+        <test-method signature="getSingleUserTest()[pri:0, instance:api.UsersApiTest@1725dc0f]" started-at="2026-04-01T15:55:03 MDT" name="getSingleUserTest" finished-at="2026-04-01T15:55:04 MDT" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleUserTest -->
+        <test-method signature="getUsersTest()[pri:0, instance:api.UsersApiTest@1725dc0f]" started-at="2026-04-01T15:55:04 MDT" name="getUsersTest" finished-at="2026-04-01T15:55:04 MDT" duration-ms="118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUsersTest -->

@@ -33,7 +33,7 @@ public class LoginTest {
         inventoryPage = new InventoryPage(driver);
     }
 
-    @Test
+    @Test(groups = {"tests"})
     public void validLoginTest() {
         loginPage.open();
         loginPage.login("standard_user", "secret_sauce");

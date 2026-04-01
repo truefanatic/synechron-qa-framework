@@ -1,46 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-01T15:55:00 MDT" name="SynechronSuite" finished-at="2026-04-01T15:55:04 MDT" duration-ms="3675">
+  <suite started-at="2026-04-01T17:23:59 MDT" name="SynechronSuite" finished-at="2026-04-01T17:24:07 MDT" duration-ms="8182">
     <groups>
+      <group name="tests">
+        <method signature="LoginTest.validLoginTest()[pri:0, instance:tests.LoginTest@2b6faea6]" name="validLoginTest" class="tests.LoginTest"/>
+      </group> <!-- tests -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@4fb0f2b9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
       <group name="api">
-        <method signature="UsersApiTest.createUserTest()[pri:0, instance:api.UsersApiTest@1725dc0f]" name="createUserTest" class="api.UsersApiTest"/>
-        <method signature="UsersApiTest.getSingleUserTest()[pri:0, instance:api.UsersApiTest@1725dc0f]" name="getSingleUserTest" class="api.UsersApiTest"/>
-        <method signature="UsersApiTest.getUsersTest()[pri:0, instance:api.UsersApiTest@1725dc0f]" name="getUsersTest" class="api.UsersApiTest"/>
+        <method signature="UsersApiTest.createUserTest()[pri:0, instance:api.UsersApiTest@31c88ec8]" name="createUserTest" class="api.UsersApiTest"/>
+        <method signature="UsersApiTest.getSingleUserTest()[pri:0, instance:api.UsersApiTest@31c88ec8]" name="getSingleUserTest" class="api.UsersApiTest"/>
+        <method signature="UsersApiTest.getUsersTest()[pri:0, instance:api.UsersApiTest@31c88ec8]" name="getUsersTest" class="api.UsersApiTest"/>
       </group> <!-- api -->
     </groups>
-    <test started-at="2026-04-01T15:55:00 MDT" name="UITests" finished-at="2026-04-01T15:55:02 MDT" duration-ms="2304">
+    <test started-at="2026-04-01T17:23:59 MDT" name="UITests" finished-at="2026-04-01T17:24:05 MDT" duration-ms="5944">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@51e5fc98]" started-at="2026-04-01T15:55:00 MDT" name="setUp" finished-at="2026-04-01T15:55:02 MDT" duration-ms="1558" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@2b6faea6]" started-at="2026-04-01T17:23:59 MDT" name="setUp" finished-at="2026-04-01T17:24:04 MDT" duration-ms="5216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLoginTest()[pri:0, instance:tests.LoginTest@51e5fc98]" started-at="2026-04-01T15:55:02 MDT" name="validLoginTest" finished-at="2026-04-01T15:55:02 MDT" duration-ms="648" status="PASS">
+        <test-method signature="validLoginTest()[pri:0, instance:tests.LoginTest@2b6faea6]" started-at="2026-04-01T17:24:04 MDT" name="validLoginTest" finished-at="2026-04-01T17:24:05 MDT" duration-ms="630" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@51e5fc98]" started-at="2026-04-01T15:55:02 MDT" name="tearDown" finished-at="2026-04-01T15:55:02 MDT" duration-ms="88" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@2b6faea6]" started-at="2026-04-01T17:24:05 MDT" name="tearDown" finished-at="2026-04-01T17:24:05 MDT" duration-ms="88" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginTest -->
     </test> <!-- UITests -->
-    <test started-at="2026-04-01T15:55:02 MDT" name="APITests" finished-at="2026-04-01T15:55:04 MDT" duration-ms="1349">
+    <test started-at="2026-04-01T17:24:05 MDT" name="APITests" finished-at="2026-04-01T17:24:07 MDT" duration-ms="1942">
       <class name="api.UsersApiTest">
-        <test-method signature="createUserTest()[pri:0, instance:api.UsersApiTest@1725dc0f]" started-at="2026-04-01T15:55:02 MDT" name="createUserTest" finished-at="2026-04-01T15:55:03 MDT" duration-ms="1022" status="PASS">
+        <test-method signature="createUserTest()[pri:0, instance:api.UsersApiTest@31c88ec8]" started-at="2026-04-01T17:24:05 MDT" name="createUserTest" finished-at="2026-04-01T17:24:06 MDT" duration-ms="1096" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserTest -->
-        <test-method signature="getSingleUserTest()[pri:0, instance:api.UsersApiTest@1725dc0f]" started-at="2026-04-01T15:55:03 MDT" name="getSingleUserTest" finished-at="2026-04-01T15:55:04 MDT" duration-ms="206" status="PASS">
+        <test-method signature="getSingleUserTest()[pri:0, instance:api.UsersApiTest@31c88ec8]" started-at="2026-04-01T17:24:06 MDT" name="getSingleUserTest" finished-at="2026-04-01T17:24:06 MDT" duration-ms="417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSingleUserTest -->
-        <test-method signature="getUsersTest()[pri:0, instance:api.UsersApiTest@1725dc0f]" started-at="2026-04-01T15:55:04 MDT" name="getUsersTest" finished-at="2026-04-01T15:55:04 MDT" duration-ms="118" status="PASS">
+        <test-method signature="getUsersTest()[pri:0, instance:api.UsersApiTest@31c88ec8]" started-at="2026-04-01T17:24:06 MDT" name="getUsersTest" finished-at="2026-04-01T17:24:07 MDT" duration-ms="428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUsersTest -->
       </class> <!-- api.UsersApiTest -->
     </test> <!-- APITests -->
+    <test started-at="2026-04-01T17:24:07 MDT" name="Cucumber Tests" finished-at="2026-04-01T17:24:07 MDT" duration-ms="269">
+      <class name="runners.RunCucumberTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.RunCucumberTest@4fb0f2b9]" started-at="2026-04-01T17:24:07 MDT" name="setUpClass" finished-at="2026-04-01T17:24:07 MDT" duration-ms="145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3e4f2300]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@4fb0f2b9]" started-at="2026-04-01T17:24:07 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-01T17:24:07 MDT" duration-ms="26" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunCucumberTest@4fb0f2b9]" started-at="2026-04-01T17:24:07 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-01T17:24:07 MDT" duration-ms="88" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get users list successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Users API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.RunCucumberTest@4fb0f2b9]" started-at="2026-04-01T17:24:07 MDT" name="tearDownClass" finished-at="2026-04-01T17:24:07 MDT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.RunCucumberTest -->
+    </test> <!-- Cucumber Tests -->
   </suite> <!-- SynechronSuite -->
 </testng-results>

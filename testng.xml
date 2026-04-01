@@ -5,9 +5,16 @@
             <class name="tests.LoginTest"/>
         </classes>
     </test>
+r
     <test name="APITests">
         <classes>
             <class name="api.UsersApiTest"/>
+        </classes>
+    </test>
+
+    <test name="Cucumber Tests">
+        <classes>
+            <class name="runners.RunCucumberTest"/>
         </classes>
     </test>
 </suite>

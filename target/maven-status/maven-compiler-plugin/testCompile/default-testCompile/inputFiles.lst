@@ -5,6 +5,8 @@
 /Users/kyrylogarmash/Sources/synechron-qa-framework/src/test/java/models/CreateUserRequest.java
 /Users/kyrylogarmash/Sources/synechron-qa-framework/src/test/java/pages/InventoryPage.java
 /Users/kyrylogarmash/Sources/synechron-qa-framework/src/test/java/pages/LoginPage.java
+/Users/kyrylogarmash/Sources/synechron-qa-framework/src/test/java/runners/RunCucumberTest.java
 /Users/kyrylogarmash/Sources/synechron-qa-framework/src/test/java/stepdefinitions/LoginSteps.java
+/Users/kyrylogarmash/Sources/synechron-qa-framework/src/test/java/stepdefinitions/UsersSteps.java
 /Users/kyrylogarmash/Sources/synechron-qa-framework/src/test/java/tests/CucumberTestRunner.java
 /Users/kyrylogarmash/Sources/synechron-qa-framework/src/test/java/tests/LoginTest.java

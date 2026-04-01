@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'maven:3.9.6-eclipse-temurin-17'
-        }
-    }
+    agent any
 
     stages {
         stage('Checkout') {
@@ -14,6 +10,7 @@ pipeline {
 
         stage('Build') {
             steps {
+                sh 'mvn -version'
                 sh 'mvn clean compile'
             }
         }
@@ -27,7 +24,13 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'target/**', fingerprint: true
+            script {
+                if (fileExists('target')) {
+                    archiveArtifacts artifacts: 'target/**', fingerprint: true
+                } else {
+                    echo 'No target directory found, skipping archive.'
+                }
+            }
         }
     }
 }

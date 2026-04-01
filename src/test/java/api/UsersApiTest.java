@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class UsersApiTest {
-    @Test
+    @Test(groups = {"api"})
     public void getUsersTest() {
         String apiKey = System.getenv("API_KEY");
         Response response = RestAssured

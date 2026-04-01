@@ -1,3 +1,6 @@
-pages/LoginPage.class
 pages/InventoryPage.class
 tests/LoginTest.class
+api/UsersApiTest.class
+stepdefinitions/LoginSteps.class
+pages/LoginPage.class
+tests/CucumberTestRunner.class

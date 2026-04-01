@@ -15,6 +15,9 @@ pipeline {
 
         stage('Test') {
             steps {
+                withCredentials([string(credentialsId: 'api-key', variable: 'API_KEY')]) {
+                    sh 'mvn test'
+                    }
                 sh 'mvn test'
             }
         }

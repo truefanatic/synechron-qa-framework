@@ -8,9 +8,11 @@ import org.testng.annotations.Test;
 public class UsersApiTest {
     @Test
     public void getUsersTest() {
+        String apiKey = System.getenv("API_KEY");
         Response response = RestAssured
                 .given()
                 .baseUri("https://reqres.in")
+                .header("x-api-key", apiKey)
                 .when()
                 .get("/api/users?page=2");
 

@@ -2,9 +2,6 @@ package api;
 
 import io.restassured.response.Response;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import models.CreateUserRequest;
 
 public class UsersApi extends BaseApi{

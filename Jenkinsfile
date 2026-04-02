@@ -6,6 +6,11 @@ pipeline {
         }
     }
 
+     environment {
+            BASE_URL = credentials('base-url')
+        }
+
+
     stages {
         stage('Build') {
             steps {

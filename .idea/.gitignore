@@ -1,5 +1,9 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+<<<<<<< Updated upstream
 ../.env
 .env
+=======
+../.envgit
+>>>>>>> Stashed changes
